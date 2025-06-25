@@ -17,7 +17,7 @@ const port = process.env.PORT || 4000;
 await connectDB();
 await connectCloudinary();
 
-const allowedOrigins = ["http://localhost:5173","https://kisan-agritech-solutions-5odf.vercel.app"];
+const allowedOrigins = ["http://localhost:5173","https://kisan-agritech-solutions.vercel.app"];
 app.post("/stripe", express.raw({ type: "application/json" }), stripeWebhooks);
 app.use(express.json());
 app.use(cookieParser());
