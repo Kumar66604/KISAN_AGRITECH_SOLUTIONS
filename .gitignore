@@ -43,7 +43,7 @@ yarn-error.log*
 # Production bundle
 /build
 
-# Misc
+# Misc.
 .DS_Store
 .env.local
 .env.development.local
